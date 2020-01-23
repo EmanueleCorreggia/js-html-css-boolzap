@@ -4,13 +4,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 main {
-  background-image: url("image/sfondo.png");
+  background-image: url("../image/sfondo.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   padding: 20px 0;
 }
+
 .container {
   display: flex;
   width: 70%;
@@ -18,16 +20,19 @@ main {
   height: 100%;
   background-color: gray;
 }
+
 .col_sx {
   width: 30%;
   height: 100%;
   background: lightblue;
 }
+
 .col_dx {
   width: 70%;
   height: 100%;
   background: white;
 }
+
 /* definizioni colonna sinistra */
 /* sezione dei pulsanti */
 .nav_up {
@@ -36,22 +41,27 @@ main {
   background-color: #EAEAEA;
   height: 80px;
 }
+
 .nav_up .image_account img {
   max-height: 50px;
   max-width: 50px;
   border-radius: 30px;
   margin: 20px;
 }
+
 .nav_up .pulsanti_sx, .nav_up .image_account {
   display: flex;
   align-items: center;
 }
+
 .col_sx .sx .pulsanti_sx {
   border-right: 1px solid lightgray;
 }
+
 .nav_up .pulsanti_sx img {
   margin: 10px;
 }
+
 /* sezione delle chat */
 .col_sx .chat_sx .notifiche_attivation {
   background-color: #8EDAFC;
@@ -61,29 +71,217 @@ main {
   padding: 20px;
   height: 80px;
 }
+
 .col_sx .chat_sx .notifiche_attivation .text {
   margin-left: 10px;
   font-family: Verdana;
   font-size: 11pt;
 }
+
 .col_sx .chat_sx .notifiche_attivation .text a {
   color: gray;
   font-size: 10pt;
   padding-top: 5px;
 }
+
 /* sezione input */
 .chat_sx .input_section {
   background-color: #FAFAFA;
   height: 50px;
 }
+
 .chat_sx .input_section input {
   width: 90%;
   height: 30px;
   padding-left: 40px;
   margin: 10px;
   border: 1px solid lightgray;
-  background-image: url("image/search.png");
+  background-image: url("../image/search.png");
   background-position: left;
   background-repeat: no-repeat;
   border-radius: 5px;
  }
+
+ .chat_sx .conversazioni {
+   max-height: calc(100vh - 250px);
+   width: 100%;
+   background: white;
+   overflow-y: scroll;
+ }
+
+ .chat_sx .conversazioni .list_chat {
+   height: 1000px;
+   width: 100%;
+   background-color: white;
+ }
+
+  .chat_sx .conversazioni .list_chat .contact {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+  }
+
+  .chat_sx .conversazioni .list_chat .contact:hover {
+    background-color: lightgray;
+  }
+
+  .chat_sx .conversazioni .list_chat .contact:focus {
+    background: green;
+  }
+
+    .chat_sx .conversazioni .list_chat .contact .foto {
+      width: 20%;
+    }
+
+    .chat_sx .conversazioni .list_chat .contact .nome {
+      width: 60%;
+    }
+
+    .chat_sx .conversazioni .list_chat .contact .orario {
+      width: 20%;
+    }
+
+  .chat_sx .conversazioni .list_chat .foto img {
+    max-height: 60px;
+    max-width: 60px;
+    border-radius: 30px;
+    margin: 20px;
+  }
+
+  .chat_sx .conversazioni .list_chat .nome p {
+    font-family: Verdana;
+    margin: 30px 10px 0 10px;
+  }
+
+  .chat_sx .conversazioni .list_chat .nome span {
+    font-family: Verdana;
+    margin: 0 10px;
+    font-size: 10pt;
+    color: gray;
+  }
+
+  .chat_sx .conversazioni .list_chat .orario p {
+    padding: 30px 10px;
+    font-size: 10pt;
+    color: gray;
+    text-align: right;
+  }
+
+/* colonna destra */
+.col_dx .dx .image_account .text_dx {
+  font-family: Verdana;
+}
+
+.col_dx .dx .image_account .text_dx p {
+  color: gray;
+  font-size: 10pt;
+  padding-top: 5px;
+}
+
+/* parte dei messsaggi */
+.col_dx .cont_messaggi {
+  height: calc(100vh - 200px);
+  overflow-y: scroll;
+  background-image: url("../image/chatsfondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col_dx .messaggistica {
+  width: 100%;
+}
+
+.messaggistica .delete_message {
+  display: none;
+}
+
+.messaggistica .mex_inviato {
+  position: relative;
+  width: 20%;
+  background-color: #D5F9BA;
+  display: block;
+  padding: 15px 20px;
+  margin: 40px 100px 40px 0;
+  border-radius: 10px;
+  left: 70%;
+  word-wrap: break-word;
+  font-weight: bold;
+  font-size: 15pt;
+  position: relative;
+}
+
+.messaggistica .mex_ricevuto {
+  max-width: 20%;
+  background-color: white;
+  display: block;
+  padding: 15px 20px;
+  margin: 40px 100px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15pt;
+  position: relative;
+}
+
+.messaggistica p {
+  text-align: right;
+  color: lightgray;
+}
+
+.col_dx .inserimento_mex {
+  height: 80px;
+  width: 100%;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col_dx .inserimento_mex .first_item {
+  width: 10%;
+  padding: 30px;
+}
+
+.col_dx .inserimento_mex .last_item {
+  width: 10%;
+  padding: 30px;
+
+}
+
+.col_dx .inserimento_mex .last_item a {
+  display: none;
+}
+
+.col_dx .inserimento_mex .last_item .active {
+  display: block;
+}
+
+.col_dx .inserimento_mex .second_item {
+  width: 80%;
+}
+
+.col_dx .inserimento_mex input {
+  height: 50px;
+  border: 1px solid lightgray;
+  padding-left: 30px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.delete_message {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.mex_inviato img {
+  display: block;
+  position: relative;
+  left: 65%;
+}
+
+
+
+div.view_chat {
+  display: block;
+}

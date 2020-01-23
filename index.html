@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title>Boolzap</title>
-</head>
-<body>
-  <div class="container">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Boolzapp - </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+  </head>
+  <body>
+    <main>
+
+      <div class="container">
         <section class="col_sx">
           <!-- parte superiore della prima colonna -->
           <div class="nav_up sx">
             <!-- sezione immagine profilo -->
             <section class="image_account">
-              <img src="img/profiloPrinc.jpg" alt="avatar account">
+              <img src="image/profiloPrinc.jpg" alt="avatar account">
             </section>
             <!-- sezione pulsasnti -->
             <section class="pulsanti_sx">
-              <img src="img/aggiorna.png" alt="chat">
-              <img src="img/chat.png" alt="chat">
-              <img src="img/puntini.png" alt="chat">
+              <img src="image/aggiorna.png" alt="chat">
+              <img src="image/chat.png" alt="chat">
+              <img src="image/puntini.png" alt="chat">
             </section>
           </div>
+
           <!-- sezione delle chat -->
           <div class="chat_sx">
             <section class="notifiche_attivation">
-                <img src="img/notifiche.png" alt="notifiche">
+                <img src="image/notifiche.png" alt="notifiche">
                 <div class="text">
                   <p>Ricevi notifiche di nuovi messaggi</p>
                   <a href="#">Attiva notifiche Desktop</a>
@@ -38,5 +40,220 @@
               <input type="text" name="text" placeholder="Cerca o inizia una nuova chat">
             </section>
 
-</body>
+            <!-- sezione delle conversazioni -->
+            <section class="conversazioni">
+              <div class="list_chat" >
+                <div class="n1">
+                  <div class="contact">
+                    <div class="foto">
+                      <img class="logo" src="image/profillocontact5.jpg" alt="">
+                    </div>
+                    <div class="nome">
+                      <p>Luisa</p>
+                      <span>Ciao</span>
+                    </div>
+                    <div class="orario">
+                      <p>11.46</p>
+                    </div>
+                  </div>
+                  </div>
+
+
+                <div class="n2">
+                  <div class="contact">
+                    <div class="foto">
+                      <img class="logo" src="image/profilochat1.jpg" alt="avatar account">
+                    </div>
+                    <div class="nome">
+                      <p>Michele</p>
+                      <span>Ciao</span>
+                    </div>
+                    <div class="orario">
+                      <p>11.46</p>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="n3">
+                    <div class="contact">
+                      <div class="foto">
+                        <img class="logo" src="image/profillocontact2.jpg" alt="">
+                      </div>
+                      <div class="nome">
+                        <p>Francesco</p>
+                        <span>Ok</span>
+                      </div>
+                      <div class="orario">
+                        <p>11.46</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="n4">
+                    <div class="contact">
+                      <div class="foto">
+                        <img class="logo" src="image/profillocontact6.png" alt="">
+                      </div>
+                      <div class="nome">
+                        <p>Maria</p>
+                        <span>Ciao</span>
+                      </div>
+                      <div class="orario">
+                        <p>11.46</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="n5">
+                    <div class="contact">
+                      <div class="foto">
+                        <img class="logo" src="image/profillocontact11.jpg" alt="">
+                      </div>
+                      <div class="nome">
+                        <p>Susanna</p>
+                        <span>Ciao</span>
+                      </div>
+                      <div class="orario">
+                        <p>11.46</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="n6">
+                    <div class="contact">
+                      <div class="foto">
+                        <img class="logo" src="image/profillocontact8.jpg" alt="">
+                      </div>
+                      <div class="nome">
+                        <p>Antonella</p>
+                        <span>Ciao</span>
+                      </div>
+                      <div class="orario">
+                        <p>11.46</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="n7">
+                    <div class="contact">
+                      <div class="foto">
+                        <img class="logo" src="image/profillocontact4.jpg" alt="">
+                      </div>
+                      <div class="nome">
+                        <p>Giovanni</p>
+                        <span>Ciao</span>
+                      </div>
+                      <div class="orario">
+                        <p>11.46</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="n8">
+                    <div class="contact">
+                      <div class="foto">
+                        <img class="logo" src="image/profillocontact7.jpg" alt="">
+                      </div>
+                      <div class="nome">
+                        <p>Francesco</p>
+                        <span>Ciao</span>
+                      </div>
+                      <div class="orario">
+                        <p>11.46</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="n9">
+                    <div class="contact">
+                      <div class="foto">
+                        <img class="logo" src="image/profillocontact9.jpg" alt="">
+                      </div>
+                      <div class="nome">
+                        <p>Francesca</p>
+                        <span>Ciao</span>
+                      </div>
+                      <div class="orario">
+                        <p>11.46</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="n10">
+                    <div class="contact">
+                      <div class="foto">
+                        <img class="logo" src="image/profillocontact10.jpg" alt="">
+                      </div>
+                      <div class="nome">
+                        <p>Alice</p>
+                        <span>Ciao</span>
+                      </div>
+                      <div class="orario">
+                        <p>11.46</p>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            </section>
+          </div>
+
+        </section>
+
+        <section class="col_dx">
+          <!-- parte intestazione della chat selezionata -->
+          <div class="nav_up dx">
+            <!-- sezione immagine profilo -->
+            <section class="image_account">
+              <div class="image_C">
+
+              </div>
+              <!-- <img src="image/profilochat1.jpg" alt="avatar account"> -->
+              <div class="text_dx">
+                <span></span>
+                <p class="orario_accesso">Ultimo accesso oggi alle 11.45</p>
+              </div>
+
+            </section>
+            <!-- sezione pulsasnti -->
+            <section class="pulsanti_sx">
+              <img src="image/search2.png" alt="chat">
+              <img src="image/allegato.png" alt="chat">
+              <img src="image/puntini.png" alt="chat">
+            </section>
+          </div>
+
+          <!-- parte della chat vera e propria -->
+          <div class="cont_messaggi">
+            <section class="messaggistica">
+              <div class="view_chat n1"></div>
+              <div class="n2"></div>
+              <div class="n3"></div>
+              <div class="n4"></div>
+              <div class="n5"></div>
+              <div class="n6"></div>
+              <div class="n7"></div>
+              <div class="n8"></div>
+              <div class="n9"></div>
+              <div class="n10"></div>
+            </section>
+          </div>
+            <section class="inserimento_mex">
+              <div class="first_item">
+                <a href="#"><img src="image/smile.png" alt="emoticon"></a>
+              </div>
+              <div class="second_item">
+                <input type="text" name="text" placeholder="Scrivi un messaggio">
+              </div>
+              <div class="last_item">
+                <a href="#" class="active first"><img src="image/mic.png" alt="emoticon"></a>
+                <a href="#"class="last"><img src="image/invio.png" alt="emoticon"></a>
+              </div>
+        </section>
+        </section>
+      </div>
+
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
