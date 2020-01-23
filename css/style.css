@@ -87,9 +87,3 @@ main {
   background-repeat: no-repeat;
   border-radius: 5px;
  }
- .chat_sx .conversazioni {
-   max-height: calc(100vh - 250px);
-   width: 100%;
-   background: white;
-   overflow-y: scroll;
- }
