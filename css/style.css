@@ -6,7 +6,7 @@
 }
 
 main {
-  background-image: url("../image/sfondo.png");
+  background-image: url(../image/sfondo.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -39,12 +39,12 @@ main {
   display: flex;
   justify-content: space-between;
   background-color: #EAEAEA;
-  height: 80px;
+  height: 65px;
 }
 
 .nav_up .image_account img {
-  max-height: 50px;
-  max-width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 30px;
   margin: 20px;
 }
@@ -60,6 +60,7 @@ main {
 
 .nav_up .pulsanti_sx img {
   margin: 10px;
+  height: 20px;
 }
 
 /* sezione delle chat */
@@ -96,10 +97,10 @@ main {
   padding-left: 40px;
   margin: 10px;
   border: 1px solid lightgray;
-  background-image: url("../image/search.png");
+  background-image: url(../image/search.png);
   background-position: left;
   background-repeat: no-repeat;
-  border-radius: 5px;
+  border-radius: 50px;
  }
 
  .chat_sx .conversazioni {
@@ -115,51 +116,53 @@ main {
    background-color: white;
  }
 
-  .chat_sx .conversazioni .list_chat .contact {
-    height: 100px;
-    width: 100%;
-    border-bottom: 1px solid lightgray;
-    display: flex;
+.chat_sx .conversazioni .list_chat .contact {
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+}
+
+.chat_sx .conversazioni .list_chat .contact:hover {
+  background-color: lightgray;
   }
 
-  .chat_sx .conversazioni .list_chat .contact:hover {
-    background-color: lightgray;
+.chat_sx .conversazioni .list_chat .contact:focus {
+  background: green;
   }
 
-  .chat_sx .conversazioni .list_chat .contact:focus {
-    background: green;
-  }
+.chat_sx .conversazioni .list_chat .contact .foto {
+  width: 20%;
+}
 
-    .chat_sx .conversazioni .list_chat .contact .foto {
-      width: 20%;
-    }
+.chat_sx .conversazioni .list_chat .contact .nome {
+  width: 60%;
+}
 
-    .chat_sx .conversazioni .list_chat .contact .nome {
-      width: 60%;
-    }
+.chat_sx .conversazioni .list_chat .contact .orario {
+  width: 20%;
+}
 
-    .chat_sx .conversazioni .list_chat .contact .orario {
-      width: 20%;
-    }
+.chat_sx .conversazioni .list_chat .foto img {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  margin: 10px 20px;
+  border-style: solid;
+  border-color: lightgray;
+}
 
-  .chat_sx .conversazioni .list_chat .foto img {
-    max-height: 60px;
-    max-width: 60px;
-    border-radius: 30px;
-    margin: 20px;
-  }
+.chat_sx .conversazioni .list_chat .nome p {
+  font-family: Verdana;
+  margin: 30px 10px 0 10px;
+}
 
-  .chat_sx .conversazioni .list_chat .nome p {
-    font-family: Verdana;
-    margin: 30px 10px 0 10px;
-  }
-
-  .chat_sx .conversazioni .list_chat .nome span {
-    font-family: Verdana;
-    margin: 0 10px;
-    font-size: 10pt;
-    color: gray;
-  }
+.chat_sx .conversazioni .list_chat .nome span {
+  font-family: Verdana;
+  margin: 0 10px;
+  font-size: 10pt;
+  color: gray;
+}
 
   .chat_sx .conversazioni .list_chat .orario p {
     padding: 30px 10px;
@@ -183,7 +186,7 @@ main {
 .col_dx .cont_messaggi {
   height: calc(100vh - 200px);
   overflow-y: scroll;
-  background-image: url("../image/chatsfondo.png");
+  background-image: url(../image/chatsfondo.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -229,12 +232,13 @@ main {
 }
 
 .col_dx .inserimento_mex {
-  height: 80px;
+  height: 95px;
   width: 100%;
   background-color: #EAEAEA;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .col_dx .inserimento_mex .first_item {
@@ -265,7 +269,7 @@ main {
   border: 1px solid lightgray;
   padding-left: 30px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .delete_message {
@@ -284,4 +288,8 @@ main {
 
 div.view_chat {
   display: block;
+}
+/* parte da clonare per input */
+#entry-template {
+  display: none;
 }
