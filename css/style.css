@@ -283,3 +283,7 @@ div.view_chat {
   clear: both;
   background: white;
 }
+.last_item a {
+  color: grey;
+  height: 20px;
+}

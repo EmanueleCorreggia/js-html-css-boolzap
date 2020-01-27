@@ -63,3 +63,9 @@ function addZero(number) {
   }
   return number;
 }
+// intercetto il focus e trasformo l'icona del microfono in invio
+$('.second_item input').focus(function(){
+  $('.last_item .send i').toggleClass('fas fa-microphone fas fa-paper-plane');
+}).blur(function(){
+    $('.send i').toggleClass('fas fa-microphone fa fas fa-paper-plane')
+});
