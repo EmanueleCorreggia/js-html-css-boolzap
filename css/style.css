@@ -181,56 +181,6 @@ main {
   font-size: 10pt;
   padding-top: 5px;
 }
-
-/* parte dei messsaggi */
-.col_dx .cont_messaggi {
-  height: calc(100vh - 200px);
-  overflow-y: scroll;
-  background-image: url(../image/chatsfondo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.col_dx .messaggistica {
-  width: 100%;
-}
-
-.messaggistica .delete_message {
-  display: none;
-}
-
-.messaggistica .mex_inviato {
-  position: relative;
-  width: 20%;
-  background-color: #D5F9BA;
-  display: block;
-  padding: 15px 20px;
-  margin: 40px 100px 40px 0;
-  border-radius: 10px;
-  left: 70%;
-  word-wrap: break-word;
-  font-weight: bold;
-  font-size: 15pt;
-  position: relative;
-}
-
-.messaggistica .mex_ricevuto {
-  max-width: 20%;
-  background-color: white;
-  display: block;
-  padding: 15px 20px;
-  margin: 40px 100px;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 15pt;
-  position: relative;
-}
-
-.messaggistica p {
-  text-align: right;
-  color: lightgray;
-}
-
 .col_dx .inserimento_mex {
   height: 95px;
   width: 100%;
@@ -292,4 +242,44 @@ div.view_chat {
 /* parte da clonare per input */
 #entry-template {
   display: none;
+}
+/* nuova colonna messaggi */
+.col-right-messages {
+  display: none;
+  height: calc(100% - 140px);
+  padding: 40px;
+  background-image: url(../image/chatsfondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+.col-right-messages.active {
+  display: block;
+}
+
+.message {
+  min-width: 30%;
+  max-width: 60%;
+  padding: 5px;
+  margin: 10px;
+
+  border-radius: 5px;
+}
+.message-top {
+  display: flex;
+  justify-content: space-between;
+}
+.message-bottom {
+  text-align: right;
+}
+.message.sent {
+  float: right;
+  clear: both;
+  background-color: green;
+}
+
+.message.received {
+  float: left;
+  clear: both;
+  background: white;
 }
