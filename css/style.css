@@ -246,7 +246,7 @@ div.view_chat {
 /* nuova colonna messaggi */
 .col-right-messages {
   display: none;
-  height: calc(100% - 140px);
+  height: calc(100% - 160px);
   padding: 40px;
   background-image: url(../image/chatsfondo.png);
   background-repeat: no-repeat;
