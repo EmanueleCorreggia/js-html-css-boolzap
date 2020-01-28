@@ -1,268 +1,203 @@
-/* definizioni generali */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.template {
+  display: none;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: lightblue;
+}
+.avatar img {
+  width: 100%;
+}
 
-main {
-  background-image: url(../image/sfondo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+/* typo */
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 100vh;
-  padding: 20px 0;
+  min-width: 700px;
+  font-size: 14px;
+  font-family: Verdana;
+  background-image: url(../image/sfondo.png);
+  background-size:  cover;
+  background-repeat: no-repeat;
+
 }
 
 .container {
-  display: flex;
   width: 70%;
-  margin: 0 auto;
-  height: 100%;
-  background-color: gray;
-}
-
-.col_sx {
-  width: 30%;
-  height: 100%;
-  background: lightblue;
-}
-
-.col_dx {
-  width: 70%;
-  height: 100%;
+  height: 90%;
   background: white;
 }
 
-/* definizioni colonna sinistra */
-/* sezione dei pulsanti */
-.nav_up {
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(234, 234, 234);
   display: flex;
   justify-content: space-between;
-  background-color: #EAEAEA;
-  height: 65px;
-}
-
-.nav_up .image_account img {
-  height: 60px;
-  width: 60px;
-  border-radius: 30px;
-  margin: 20px;
-}
-
-.nav_up .pulsanti_sx, .nav_up .image_account {
-  display: flex;
   align-items: center;
+  padding: 10px;
 }
-
-.col_sx .sx .pulsanti_sx {
-  border-right: 1px solid lightgray;
+.icons {
+  color: rgb(177, 177, 177);
 }
-
-.nav_up .pulsanti_sx img {
-  margin: 10px;
-  height: 20px;
-}
-
-/* sezione delle chat */
-.col_sx .chat_sx .notifiche_attivation {
-  background-color: #8EDAFC;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px;
-  height: 80px;
-}
-
-.col_sx .chat_sx .notifiche_attivation .text {
-  margin-left: 10px;
-  font-family: Verdana;
-  font-size: 11pt;
-}
-
-.col_sx .chat_sx .notifiche_attivation .text a {
-  color: gray;
-  font-size: 10pt;
-  padding-top: 5px;
-}
-
-/* sezione input */
-.chat_sx .input_section {
-  background-color: #FAFAFA;
-  height: 50px;
-}
-
-.chat_sx .input_section input {
-  width: 90%;
-  height: 30px;
-  padding-left: 40px;
-  margin: 10px;
-  border: 1px solid lightgray;
-  background-image: url(../image/search.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  border-radius: 50px;
- }
-
- .chat_sx .conversazioni {
-   max-height: calc(100vh - 250px);
-   width: 100%;
-   background: white;
-   overflow-y: scroll;
- }
-
- .chat_sx .conversazioni .list_chat {
-   height: 1000px;
-   width: 100%;
-   background-color: white;
- }
-
-.chat_sx .conversazioni .list_chat .contact {
-  height: 80px;
-  width: 100%;
-  border-bottom: 1px solid lightgray;
-  display: flex;
-}
-
-.chat_sx .conversazioni .list_chat .contact:hover {
-  background-color: lightgray;
-  }
-
-.chat_sx .conversazioni .list_chat .contact:focus {
-  background: green;
-  }
-
-.chat_sx .conversazioni .list_chat .contact .foto {
-  width: 20%;
-}
-
-.chat_sx .conversazioni .list_chat .contact .nome {
-  width: 60%;
-}
-
-.chat_sx .conversazioni .list_chat .contact .orario {
-  width: 20%;
-}
-
-.chat_sx .conversazioni .list_chat .foto img {
-  height: 60px;
-  width: 60px;
-  border-radius: 30px;
-  margin: 10px 20px;
-  border-style: solid;
-  border-color: lightgray;
-}
-
-.chat_sx .conversazioni .list_chat .nome p {
-  font-family: Verdana;
-  margin: 30px 10px 0 10px;
-}
-
-.chat_sx .conversazioni .list_chat .nome span {
-  font-family: Verdana;
+.icons i {
   margin: 0 10px;
-  font-size: 10pt;
-  color: gray;
+  font-size: 18px;
 }
-
-  .chat_sx .conversazioni .list_chat .orario p {
-    padding: 30px 10px;
-    font-size: 10pt;
-    color: gray;
-    text-align: right;
-  }
-
-/* colonna destra */
-.col_dx .dx .image_account .text_dx {
-  font-family: Verdana;
+.icons img {
+  margin: 0 10px;
+  font-size: 18px;
 }
-
-.col_dx .dx .image_account .text_dx p {
-  color: gray;
-  font-size: 10pt;
-  padding-top: 5px;
+.col-left {
+  width: 35%;
+  height: 100%;
 }
-.col_dx .inserimento_mex {
-  height: 95px;
+.disclaimer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  background-color: #EAEAEA;
+  height: 70px;
+  background-color: rgb(142, 218, 252);
+}
+.disclaimer .disclaimer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.disclaimer .disclaimer-icon i{
+  font-size: 25px;
+  color: rgb(142, 218, 252);
+}
+.contact-search {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(234, 234, 234);
+}
+.wrapper-input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 50px;
+}
+.wrapper-input input {
+  border: 0;
+  width: 80%;
+  height: 100%;
+}
+input .placeholder{
+  color: rgb(234, 234, 234);
+
+}
+.search-icon i {
+  color: rgb(234, 234, 234);
+}
+.contacts {
+  height: calc( 100% - 190px);
+  overflow-y: scroll;
+}
+.contacts-list {
+  list-style: none;
+}
+.contact-element {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+/* .contact-element.active, */
+.contact-element:hover,
+.contact-element:active,
+.contact-element:focus {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+.contact-element .avatar {
+  margin-right: 10px;
+}
+.contact-element .contact-info {
+  width: 90%;
+}
+.contact-info-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
-.col_dx .inserimento_mex .first_item {
-  width: 10%;
-  padding: 30px;
-}
-
-.col_dx .inserimento_mex .last_item {
-  width: 10%;
-  padding: 30px;
+.col-right {
+  width: 65%;
+  height: 100%;
 
 }
-
-.col_dx .inserimento_mex .last_item a {
-  display: none;
+.col-right .contact-active {
+  width: 70%;
+}
+.col-right .contact-active small{
+  color: rgb(177, 177, 177);
+}
+.contact-info small {
+  color: grey;
+}
+/* Aggiunto container di tutti i messaggi che ha la scroll*/
+.messages-wrapper {
+  height: calc(100% - 140px);
+  overflow-y: scroll;
 }
 
-.col_dx .inserimento_mex .last_item .active {
-  display: block;
-}
-
-.col_dx .inserimento_mex .second_item {
-  width: 80%;
-}
-
-.col_dx .inserimento_mex input {
-  height: 50px;
-  border: 1px solid lightgray;
-  padding-left: 30px;
-  width: 100%;
-  border-radius: 50px;
-}
-
-.delete_message {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-}
-
-.mex_inviato img {
-  display: block;
-  position: relative;
-  left: 65%;
-}
-
-
-
-div.view_chat {
-  display: block;
-}
-/* parte da clonare per input */
-#entry-template {
-  display: none;
-}
-/* nuova colonna messaggi */
 .col-right-messages {
   display: none;
-  height: calc(100% - 160px);
+  min-height: 100%;
   padding: 40px;
   background-image: url(../image/chatsfondo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-y: scroll;
 }
 .col-right-messages.active {
   display: block;
 }
-
 .message {
+  position: relative;
   min-width: 30%;
   max-width: 60%;
   padding: 5px;
-  margin: 10px;
-
+  margin: 25px 10px;
   border-radius: 5px;
 }
 .message-top {
@@ -277,29 +212,53 @@ div.view_chat {
   clear: both;
   background-color: green;
 }
-
 .message.received {
   float: left;
   clear: both;
   background: white;
 }
-.last_item a {
-  color: grey;
-  height: 20px;
-}
-.menu div{
-  padding: 5px;
+.message:hover .message-options,
+.message:active .message-options,
+.message:focus .message-options{
+  display: block;
   cursor: pointer;
 }
-.menu{
-  top: 20px;
-  right: -30px;
-  width: 150px;
-  height: 50px;
-  z-index: 1;
-  background-color: lightgrey;
+.message-options {
+  display: none;
 }
-/* classe che mi servirà per visualizzare il menu */
-.menu_on{
+.message-link {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  padding: 10px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  background: white;
+  border-radius: 10px;
+}
+.message-link li:hover {
+  background-color: lightgrey;
+
+}
+.message-link.active {
   display: block;
+}
+.message-link ul {
+  list-style:  none;
+}
+.col-right-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(234, 234, 234);
+}
+.col-right-footer .send-message {
+  width: 85%;
+  border-radius: 50px;
+  height: 40px;
+}
+.col-right-footer-icon i {
+  font-size: 25px;
+  color: grey;
 }
