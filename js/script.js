@@ -69,3 +69,13 @@ $('.second_item input').focus(function(){
 }).blur(function(){
     $('.send i').toggleClass('fas fa-microphone fa fas fa-paper-plane')
 });
+
+//  al click di 'Cancella Messaggio', questo, viene rimosso dal DOM
+$(document).on('click', '.delete_message', function() {
+  $(this).parents('.message').remove();
+});
+
+//  cliccando sulla chevron nel messaggio, spunta il dropdown
+$(document).on('click', '.fa fa-chevron-down', function() {
+  $(this).siblings('.menu').toggleClass('menu_on');
+});
