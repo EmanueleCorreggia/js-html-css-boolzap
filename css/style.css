@@ -22,7 +22,8 @@
   background-color: lightblue;
 }
 .avatar img {
-  width: 100%;
+  width: 50px;
+  height: 50px;
 }
 
 /* typo */
@@ -65,7 +66,7 @@ body {
   align-items: center;
   padding: 10px;
 }
-.icons {
+.icons a{
   color: rgb(177, 177, 177);
 }
 .icons i {
@@ -235,6 +236,7 @@ input .placeholder{
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
   background: white;
   border-radius: 10px;
+  cursor: pointer;
 }
 .message-link li:hover {
   background-color: lightgrey;
@@ -261,4 +263,24 @@ input .placeholder{
 .col-right-footer-icon i {
   font-size: 25px;
   color: grey;
+}
+/* .title img {
+  height: 70px;
+  width: 300px;
+}
+.title {
+  position: absolute;
+  top: 50px;
+  left: 1200px;
+
+
+} */
+.firma {
+  position: absolute;
+  bottom: 110px;
+  left: 1300px;
+}
+.firma img {
+  height: 70px;
+  width: 300px;
 }
