@@ -1,3 +1,4 @@
+/* regole generali */
 * {
   margin: 0;
   padding: 0;
@@ -14,28 +15,6 @@
 .float-left {
   float: left;
 }
-.avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: lightblue;
-}
-.avatar img {
-  width: 50px;
-  height: 50px;
-}
-
-/* typo */
-h2 {
-  font-size: 16px;
-  font-weight: normal;
-}
-h3 {
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
 body {
   display: flex;
   justify-content: center;
@@ -48,15 +27,32 @@ body {
   background-image: url(../image/sfondo.png);
   background-size:  cover;
   background-repeat: no-repeat;
-
 }
-
+/* avatar */
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: lightblue;
+}
+.avatar img {
+  width: 50px;
+  height: 50px;
+}
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
 .container {
   width: 70%;
   height: 90%;
   background: white;
 }
-
 .header {
   width: 100%;
   height: 70px;
@@ -81,6 +77,7 @@ body {
   width: 35%;
   height: 100%;
 }
+/* disclaimer */
 .disclaimer {
   display: flex;
   justify-content: center;
@@ -128,7 +125,6 @@ body {
 }
 input .placeholder{
   color: rgb(234, 234, 234);
-
 }
 .search-icon i {
   color: rgb(234, 234, 234);
@@ -163,11 +159,9 @@ input .placeholder{
   justify-content: space-between;
   align-items: center;
 }
-
 .col-right {
   width: 65%;
   height: 100%;
-
 }
 .col-right .contact-active {
   width: 70%;
@@ -183,7 +177,6 @@ input .placeholder{
   height: calc(100% - 140px);
   overflow-y: scroll;
 }
-
 .col-right-messages {
   display: none;
   min-height: 100%;
@@ -227,6 +220,7 @@ input .placeholder{
 .message-options {
   display: none;
 }
+/* dropdown */
 .message-link {
   display: none;
   position: absolute;
@@ -240,7 +234,6 @@ input .placeholder{
 }
 .message-link li:hover {
   background-color: lightgrey;
-
 }
 .message-link.active {
   display: block;
@@ -248,6 +241,7 @@ input .placeholder{
 .message-link ul {
   list-style:  none;
 }
+/* footer */
 .col-right-footer {
   display: flex;
   justify-content: space-around;
@@ -264,17 +258,7 @@ input .placeholder{
   font-size: 25px;
   color: grey;
 }
-/* .title img {
-  height: 70px;
-  width: 300px;
-}
-.title {
-  position: absolute;
-  top: 50px;
-  left: 1200px;
-
-
-} */
+/* chicca */
 .firma {
   position: absolute;
   bottom: 110px;
